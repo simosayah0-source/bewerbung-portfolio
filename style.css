@@ -1130,12 +1130,9 @@ nav {
  h2 {
         font-size: 45px;
     }
-    .nav-links {
-    display: none;
+.hero-section {
+    padding-top: 160px;
 }
-
-.mobile-menu-btn {
-    display: block;
 
 
 }

@@ -1130,4 +1130,11 @@ nav {
  h2 {
         font-size: 45px;
     }
+    .nav-links {
+    display: none;
+}
+
+.mobile-menu-btn {
+    display: block;
+}
 }

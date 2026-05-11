@@ -1137,11 +1137,6 @@ nav {
 .mobile-menu-btn {
     display: block;
 }
-.nav-links {
-    display: none !important;
-}
-
-.mobile-menu-btn {
-    display: block !important;
-}
+.hero-section {
+    padding-top: 180px;
 }

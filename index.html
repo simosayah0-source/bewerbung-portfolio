@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bewerbung um eine Ausbildung | Portfolio</title>
+    <meta name="description" content="Persönliches Portfolio für die Bewerbung um eine Ausbildung in Deutschland.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot" data-cursor></div>
+    <div class="cursor-outline" data-cursor></div>
+
+    <!-- Loading Animation -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="gold-spinner"></div>
+            <p>Lade Portfolio...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="glass-nav">
+        <div class="nav-container">
+            <a href="#hero" class="logo">Bewerber<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#ueber-mich">Über mich</a></li>
+                <li><a href="#berufserfahrung">Berufserfahrung</a></li>
+                <li><a href="#qualifikationen">Qualifikationen</a></li>
+                <li><a href="#staerken">Stärken</a></li>
+                <li><a href="#dokumente">Dokumente</a></li>
+                <li><a href="#motivation">Motivation</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <!-- Canvas for Particles -->
+        <canvas id="particles-canvas"></canvas>
+        <div class="hero-grid-bg"></div>
+        
+        <div class="hero-content">
+            <!-- Left Side -->
+            <div class="hero-left reveal-left">
+                <h1 class="hero-title">MOHAMMED<br><span class="gold-text">ES-SAYAH</span></h1>
+                <h2 class="hero-subtitle">Bewerbung um eine Ausbildung in Deutschland</h2>
+                <div class="hero-actions">
+                    <a href="#dokumente" class="btn btn-primary"><i class="fas fa-file-pdf"></i> Lebenslauf herunterladen</a>
+                    <a href="https://wa.me/212631659115" class="btn btn-secondary"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+                    <a href="mailto:simosayah0@gmail.com" class="btn btn-secondary"><i class="fas fa-envelope"></i> E-Mail</a>
+                </div>
+            </div>
+
+            <!-- Center -->
+            <div class="hero-center reveal-up">
+                <div class="play-wrapper" id="open-intro-video">
+                    <div class="play-ring"></div>
+                    <button class="play-btn"><i class="fas fa-play"></i></button>
+                </div>
+            </div>
+
+            <!-- Right Side -->
+            <div class="hero-right reveal-right">
+                <div class="portrait-card">
+                    <!-- Platzhalter für das Profilbild - Passe den Pfad an -->
+                    <img src="assets/profile.jpg" alt="Professionelles Porträt" onerror="this.src='https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=600&auto=format&fit=crop';">
+                    <div class="card-glow"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Über Mich Section -->
+    <section id="ueber-mich" class="section-padding">
+        <div class="container">
+            <h2 class="section-title reveal-up">Über <span class="gold-text">Mich</span></h2>
+            
+            <div class="about-grid">
+                <div class="about-text glass-card reveal-left">
+                    <h3>Kurzprofil</h3>
+                    <p><br><br>
+                    24-jähriger Student der Internationalen Wirtschaft mit ersten praktischen Erfahrungen in den Bereichen Organisation, Warenmanagement, Kundenservice und Verwaltung. Ich arbeite sorgfältig, verantwortungsbewusst und teamorientiert und interessiere mich besonders für strukturierte Arbeitsabläufe, Kommunikation sowie organisatorische und digitale Prozesse. Durch mein Studium und meine bisherigen praktischen Erfahrungen konnte ich meine Fähigkeiten im Umgang mit Kunden, Dokumenten, Daten und organisatorischen Aufgaben weiterentwickeln. Mein Ziel ist es, mich beruflich weiterzuentwickeln, praktische Erfahrungen zu sammeln und langfristig in einem professionellen und modernen Arbeitsumfeld erfolgreich zu arbeiten</p>
+                    
+                    <h3 class="mt-4"></h3>
+                    <p></p>
+                </div>
+                
+                <div class="skills-container reveal-right">
+                    <div class="skill-card">
+                        <i class="fas fa-language gold-text"></i>
+                        <h4>Sprachkenntnisse</h4>
+                        <p>Deutsch (B1 – ÖSD, B2-Kurs läuft), Englisch (gut), Arabisch Muttersprache Englisch (Grundkenntnisse)</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-laptop-code gold-text"></i>
+                        <h4>Fachkompetenz</h4>
+                        <p>MS Office (Word, Excel, Access) , Adobe Illustrator & Photoshop , Grundkenntnisse in digitalen Anwendungen , IT-Kenntnisse, Teamarbeit</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-award gold-text"></i>
+                        <h4>Motivation</h4>
+                        <p>Hohe Leistungsbereitschaft & Zuverlässigkeit</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-globe-europe gold-text"></i>
+                        <h4>Interkulturell</h4>
+                        <p>Anpassungsfähig & Offen für Neues</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Platzhalter Sektionen für Navigation -->
+    <section id="berufserfahrung" class="section-padding dark-bg">
+        <div class="container">
+            <h2 class="section-title reveal-up">Berufs<span class="gold-text">erfahrung</span></h2>
+            <div class="timeline reveal-up">
+                <div class="timeline-item glass-card">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">05/2025 - 07/2025</div>
+                    <h3>Praktikant im Rechnungswesen </h3>
+                    <h4>GLACE RAPIDE SARL(GmbH), Tanger, Marokko</h4>
+                    <p>Organisation des Warenein- und ausgangs , Verantwortung für Zahlungsabwicklung , Zusammenarbeit mit dem Team der Finanzabteilung , Unterstützung bei der Bearbeitung von Belegen</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="qualifikationen" class="section-padding">
+        <div class="container">
+            <h2 class="section-title reveal-up">Quali<span class="gold-text">fikationen</span> & Ausbildung</h2>
+            <div class="timeline reveal-up">
+                <div class="timeline-item glass-card">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">05/09/2023 - aktuell</div>
+                    <h3>Studium der Internationalen Wirtschaft</h3>
+                    <h4>[Abdelmalek Essaadi Universität], [Tanger, Marokko]</h4>
+                    <p>(Betriebswirtschaft, Marketing, Rechnungswesen, Organisation, Datenanalyse).</p>
+                   
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">12/07/2023</div>
+                    <h3>Abitur in Biologie und Geowissenschaften</h3>
+                    <h4>[LYCEE QUALIFIANT IBN ZOHR], [Tanger, Marokko]</h4>
+                    <p>(Biologie, Chemie, Geologie).</p>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2025</div>
+                    <h3>Büroinformatik</h3>
+                    <h4>[GENIUS center], [Tanger, Marokko]</h4>
+                    <p>(Informationssystem, Betriebssystem, Word, Excel, PowerPoint, Access).</p>
+                       <div class="timeline-dot"></div>
+                    <div class="timeline-date">2025</div>
+                    <h3>Grafikdesign</h3>
+                    <h4>[GENIUS center], [Tanger, Marokko]</h4>
+                    <p>(Adobe Photoshop, Adobe Illustrator, Adobe InDesign).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ausbildung" class="section-padding dark-bg"></section>
+    <section id="staerken" class="section-padding"></section>
+
+    <!-- Dokumente Section -->
+    <section id="dokumente" class="section-padding">
+        <div class="container">
+            <h2 class="section-title reveal-up">Bewerbungs<span class="gold-text">dokumente</span></h2>
+            <p class="section-subtitle reveal-up">Hier finden Sie alle relevanten Unterlagen für meine Bewerbung.</p>
+
+            <div class="docs-controls reveal-up">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="doc-search" placeholder="Dokumente durchsuchen...">
+                </div>
+                
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Alle</button>
+                    
+                </div>
+            </div>
+
+            <div class="docs-grid" id="docs-container">
+                <!-- Dokumentenkarten werden via JS generiert -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Videos & Motivation Section -->
+    <section id="motivation" class="section-padding dark-bg">
+        <div class="container">
+            <h2 class="section-title reveal-up">Videos & <span class="gold-text">Motivation</span></h2>
+            
+            <div class="motivation-grid">
+                <!-- Video Card -->
+                <a href="videos.html" style="text-decoration:none; color:inherit;">
+<div class="video-card glass-card reveal-left">
+<div class="video-thumbnail">
+            <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=800&auto=format&fit=crop" alt="Video Thumbnail">
+<div class="play-overlay">
+                <i class="fas fa-play"></i>
+            </div>
+         </div>
+<div class="video-info">
+            <h3>Persönliches Vorstellungsvideo</h3>
+ <p>
+                Ein kurzes Video, in dem ich mich vorstelle und meine Motivation
+                für die Ausbildung in Deutschland erkläre.
+            </p>
+        </div>
+ </div>
+</a>
+<!-- Motivation Letter -->
+                <div class="motivation-letter glass-card reveal-right">
+                    <h3>Warum eine Ausbildung in Deutschland?</h3>
+                    <div class="letter-content">
+                        <p>Deutschland ist bekannt für sein duales Ausbildungssystem, das Praxis und Theorie perfekt miteinander verbindet. Dies ist für mich der ideale Weg, um mich beruflich zu qualifizieren.</p>
+                        <p>Zudem bewundere ich die deutsche Arbeitskultur, die Pünktlichkeit, Effizienz und Innovation schätzt. Ich bin bereit, mich voll und ganz in den Arbeitsalltag zu integrieren und meine Deutschkenntnisse kontinuierlich zu verbessern.</p>
+                        <p>Ich bringe eine hohe Lernbereitschaft mit und freue mich darauf, Teil Ihres Teams zu werden.</p>
+                    </div>
+                    <button class="btn btn-outline gold-border mt-3" onclick="openMotivationModal()"><i class="fas fa-expand"></i> Vollständig lesen</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt Section -->
+    <section id="kontakt" class="section-padding">
+        <div class="container">
+            <h2 class="section-title reveal-up">Kontakt<span class="gold-text">aufnehmen</span></h2>
+            
+            <div class="contact-grid">
+                <div class="contact-info reveal-left">
+                    <div class="contact-card glass-card">
+                        <i class="fas fa-map-marker-alt gold-text"></i>
+                        <div>
+                            <h4>Standort</h4>
+                            <p>Tanja balia Straße 33 N7 Tanger, Marokko</p>
+                        </div>
+                    </div>
+                    <div class="contact-card glass-card">
+                        <i class="fas fa-phone-alt gold-text"></i>
+                        <div>
+                            <h4>Telefonnummer</h4>
+                            <p>+212 631 659 115</p>
+                        </div>
+                    </div>
+                    <div class="contact-card glass-card">
+                        <i class="fab fa-whatsapp gold-text"></i>
+                        <div>
+                            <h4>WhatsApp</h4>
+                            <p>+212 631 659 115</p>
+                        </div>
+                    </div>
+                    <div class="contact-card glass-card">
+                        <i class="fas fa-envelope gold-text"></i>
+                        <div>
+                            <h4>E-Mail</h4>
+                            <p>simosayah0@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container glass-card reveal-right">
+                    <h3>Schreiben Sie mir eine Nachricht</h3>
+                    <form id="contact-form" onsubmit="event.preventDefault(); alert('Nachricht erfolgreich gesendet! (Demo)');">
+                        <div class="form-group">
+                            <label for="name">Name / Unternehmen</label>
+                            <input type="text" id="name" required class="glass-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-Mail Adresse</label>
+                            <input type="email" id="email" required class="glass-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Ihre Nachricht</label>
+                            <textarea id="message" rows="5" required class="glass-input"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary full-width">Nachricht Senden <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-gold-line"></div>
+        <div class="container footer-content">
+            <div class="footer-logo">Bewerber<span class="gold-text">.</span></div>
+            <div class="footer-socials">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-xing"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+            <p class="copyright">&copy; 2026 Portfolio für Ausbildung. Alle Rechte vorbehalten.</p>
+            <button class="back-to-top" id="back-to-top" aria-label="Nach oben scrollen">
+                <i class="fas fa-chevron-up"></i>
+            </button>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal" id="video-modal">
+        <div class="modal-content glass-card">
+            <span class="close-modal">&times;</span>
+            <div class="video-container">
+                <!-- Placeholder for Video -->
+                <div class="video-placeholder">
+                    <i class="fas fa-video"></i>
+                    <p>Hier wird Ihr Bewerbungsvideo eingebettet.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="motivation-modal">
+        <div class="modal-content glass-card">
+            <span class="close-modal">&times;</span>
+            <h2 class="gold-text">Ausführliches Motivationsschreiben</h2>
+            <div class="modal-body mt-4">
+                <p>Sehr geehrte Damen und Herren,</p>
+                <p><br>mit großem Interesse bewerbe ich mich um einen Ausbildungsplatz in Ihrem geschätzten Unternehmen. Deutschland ist weltweit bekannt für sein exzellentes duales Ausbildungssystem, das theoretisches Wissen perfekt mit praktischer Erfahrung verbindet. Dies ist für mich der ideale Weg, um mich beruflich zu qualifizieren und eine erfolgreiche Karriere aufzubauen.</p>
+                <p><br>Ich habe mich intensiv mit Ihrem Unternehmen auseinandergesetzt und bin beeindruckt von Ihrer Innovationskraft und der Unternehmenskultur. Ich bin überzeugt, dass ich mit meiner Lernbereitschaft, meiner Zuverlässigkeit und meiner Motivation einen positiven Beitrag zu Ihrem Team leisten kann.</p>
+                <p><br>Ich freue mich sehr über die Möglichkeit eines persönlichen Gesprächs, gerne auch vorab per Video-Call.</p>
+                <p><br>Mit freundlichen Grüßen,<br>Vorname Nachname</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

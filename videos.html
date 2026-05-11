@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Meine Videos</title>
+
+<style>
+
+body{
+    background:#0f0f0f;
+    color:white;
+    font-family:Arial;
+    padding:40px;
+}
+
+h1{
+    text-align:center;
+    color:gold;
+    margin-bottom:40px;
+}
+
+.video-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+video{
+    width:100%;
+    border:2px solid gold;
+    border-radius:15px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1>Meine Videos</h1>
+
+<div class="video-grid">
+
+    <video controls>
+        <source src="assets/video1.mp4" type="video/mp4">
+    </video>
+
+    <video controls>
+        <source src="assets/video2.mp4" type="video/mp4">
+    </video>
+
+    <video controls>
+        <source src="assets/video3.mp4" type="video/mp4">
+    </video>
+
+</div>
+
+</body>
+</html>

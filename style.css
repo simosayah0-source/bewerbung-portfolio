@@ -1137,4 +1137,11 @@ nav {
 .mobile-menu-btn {
     display: block;
 }
+.nav-links {
+    display: none !important;
+}
+
+.mobile-menu-btn {
+    display: block !important;
+}
 }

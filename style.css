@@ -1080,86 +1080,135 @@ nav {
     opacity: 1;
     transform: translate(0);
 }
-
-/* ==========================================================================
-   Responsive Design
-   ========================================================================== */
+/* MOBILE RESPONSIVE */
 @media (max-width: 768px) {
 
     body {
         overflow-x: hidden;
+        cursor: auto;
+    }
+
+    .cursor-dot,
+    .cursor-outline {
+        display: none;
     }
 
     /* NAVBAR */
-    .glass-nav {
-        padding: 15px 20px;
+    .nav-container {
+        flex-direction: column;
+        gap: 15px;
+        padding: 1rem;
     }
 
-    .nav-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
+    .logo {
+        font-size: 1.4rem;
+        text-align: center;
     }
 
     .nav-links {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 10px;
-        width: 100%;
-        margin-top: 15px;
+        gap: 12px;
     }
 
-    .nav-links li a {
-        font-size: 14px;
+    .nav-links a {
+        font-size: 12px;
     }
 
-    /* HERO SECTION */
+    /* HERO */
     .hero-section {
-        padding-top: 180px;
+        height: auto;
+        padding: 180px 0 80px;
     }
 
     .hero-content {
         display: flex;
         flex-direction: column;
-        align-items: center;
         text-align: center;
-        padding: 20px;
+        gap: 3rem;
+    }
+
+    .hero-left,
+    .hero-right {
+        width: 100%;
+        max-width: 100%;
     }
 
     .hero-title {
-        font-size: 38px !important;
-        line-height: 1.1;
-        word-break: break-word;
+        font-size: 2.3rem;
+        line-height: 1.2;
     }
 
     .hero-subtitle {
-        font-size: 18px;
-        padding: 0 10px;
+        font-size: 0.95rem;
+        letter-spacing: 1px;
     }
 
     .hero-actions {
-        display: flex;
+        justify-content: center;
         flex-direction: column;
-        width: 100%;
-        gap: 15px;
         align-items: center;
     }
 
     .hero-actions .btn {
         width: 90%;
+    }
+
+    .portrait-card {
+        width: 240px;
+        height: 320px;
+        margin: 0 auto;
+    }
+
+    /* ABOUT */
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    /* DOCUMENTS */
+    .docs-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .doc-actions {
+        flex-direction: column;
+    }
+
+    /* VIDEOS */
+    .motivation-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* CONTACT */
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* FOOTER */
+    .footer-content {
         text-align: center;
     }
 
-    .hero-center img,
-    .profile-img,
-    .hero-image {
-        width: 220px !important;
-        max-width: 90%;
-        height: auto;
+    .back-to-top {
+        right: 1rem;
+        bottom: 1rem;
     }
 
-    section {
-        padding-left: 20px;
-        padding-right
+    /* TITLES */
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-padding {
+        padding: 4rem 0;
+    }
+
+    .container {
+        padding: 0 1rem;
+    }
+}

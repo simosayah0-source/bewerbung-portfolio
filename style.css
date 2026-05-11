@@ -1154,3 +1154,55 @@ nav {
         cursor: auto;
     }
 }
+/* Mobile Responsive */
+@media (max-width: 768px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .hero img {
+        width: 220px;
+        max-width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+        line-height: 1;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .buttons a {
+        width: 90%;
+        text-align: center;
+    }
+
+    section {
+        padding: 50px 20px;
+    }
+
+    h2 {
+        font-size: 42px;
+    }
+
+    .navbar {
+        padding: 20px;
+    }
+}

@@ -1,57 +1,260 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Meine Videos</title>
+    <title>Meine Videos | Mohamed Es Sayah</title>
 
-<style>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-body{
-    background:#0f0f0f;
-    color:white;
-    font-family:Arial;
-    padding:40px;
-}
+        body {
+            font-family: Arial, sans-serif;
+            background: #111;
+            color: white;
+            min-height: 100vh;
+        }
 
-h1{
-    text-align:center;
-    color:gold;
-    margin-bottom:40px;
-}
+        /* Header */
+        header {
+            text-align: center;
+            padding: 55px 20px 35px;
+        }
 
-.video-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
-    gap:30px;
-}
+        header h1 {
+            font-size: 42px;
+            color: gold;
+            margin-bottom: 15px;
+        }
 
-video{
-    width:100%;
-    border:2px solid gold;
-    border-radius:15px;
-}
+        header p {
+            max-width: 700px;
+            margin: auto;
+            color: #ddd;
+            font-size: 17px;
+            line-height: 1.7;
+        }
 
-</style>
+        .line {
+            width: 100px;
+            height: 3px;
+            background: gold;
+            margin: 25px auto;
+        }
+
+        /* Main */
+        main {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+            padding-bottom: 60px;
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 35px;
+        }
+
+        /* Video Cards */
+        .video-card {
+            background: #1b1b1b;
+            border: 1px solid #333;
+            border-radius: 18px;
+            padding: 22px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+            transition: 0.3s ease;
+        }
+
+        .video-card:hover {
+            transform: translateY(-6px);
+            border-color: gold;
+            box-shadow: 0 12px 30px rgba(255, 215, 0, 0.12);
+        }
+
+        .video-card h2 {
+            color: gold;
+            font-size: 23px;
+            margin-bottom: 10px;
+        }
+
+        .video-card p {
+            color: #ccc;
+            line-height: 1.6;
+            margin-bottom: 18px;
+        }
+
+        video {
+            width: 100%;
+            display: block;
+            border-radius: 12px;
+            border: 2px solid #333;
+            background: black;
+        }
+
+        .video-number {
+            color: #888;
+            font-size: 13px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Bottom text */
+        .contact-text {
+            text-align: center;
+            margin-top: 55px;
+            padding: 30px;
+            background: #1b1b1b;
+            border-radius: 18px;
+            border: 1px solid #333;
+        }
+
+        .contact-text h2 {
+            color: gold;
+            margin-bottom: 12px;
+        }
+
+        .contact-text p {
+            color: #ccc;
+            line-height: 1.7;
+        }
+
+        /* Back button */
+        .back-button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            color: #111;
+            background: gold;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .back-button:hover {
+            background: white;
+            transform: scale(1.04);
+        }
+
+        /* Mobile */
+        @media (max-width: 800px) {
+
+            header h1 {
+                font-size: 32px;
+            }
+
+            .video-grid {
+                grid-template-columns: 1fr;
+            }
+
+            main {
+                width: 94%;
+            }
+
+            .video-card {
+                padding: 16px;
+            }
+        }
+    </style>
 </head>
+
 
 <body>
 
-<h1>Meine Videos</h1>
+    <header>
 
-<div class="video-grid">
+        <h1>Meine Videos</h1>
 
-    <video controls>
-        <source src="assets/video1.mp4" type="video/mp4">
-    </video>
+        <div class="line"></div>
 
-</div> class="video-grid">
+        <p>
+            Hier finden Sie zwei kurze Videos, in denen ich mich persönlich
+            vorstelle und einen kleinen Einblick in meinen Arbeitsalltag gebe.
+        </p>
 
-    <video controls>
-        <source src="assets/video2.mp4" type="video/mp4">
-    </video>
+    </header>
 
-</div>
+
+    <main>
+
+        <div class="video-grid">
+
+
+            <!-- Video 1 -->
+            <div class="video-card">
+
+                <div class="video-number">
+                    Video 01
+                </div>
+
+                <h2>Meine persönliche Vorstellung</h2>
+
+                <p>
+                    In diesem kurzen Video stelle ich mich persönlich vor
+                    und erzähle mehr über mich, meine Motivation und meine Ziele.
+                </p>
+
+                <video controls preload="metadata">
+                    <source src="assets/video1.mp4" type="video/mp4">
+                    Ihr Browser unterstützt dieses Videoformat nicht.
+                </video>
+
+            </div>
+
+
+            <!-- Video 2 -->
+            <div class="video-card">
+
+                <div class="video-number">
+                    Video 02
+                </div>
+
+                <h2>Mein Arbeitsalltag</h2>
+
+                <p>
+                    Dieses kurze Video gibt Ihnen einen kleinen Einblick
+                    in meinen Arbeitsalltag und zeigt, wie ich meine Aufgaben
+                    organisiere.
+                </p>
+
+                <video controls preload="metadata">
+                    <source src="assets/video2.mp4" type="video/mp4">
+                    Ihr Browser unterstützt dieses Videoformat nicht.
+                </video>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- Information -->
+        <div class="contact-text">
+
+            <h2>Vielen Dank für Ihr Interesse</h2>
+
+            <p>
+                Vielen Dank, dass Sie sich die Zeit nehmen,
+                meine Videos anzusehen. Ich freue mich sehr
+                über die Möglichkeit, mich persönlich vorzustellen.
+            </p>
+
+            <a href="index.html" class="back-button">
+                ← Zurück zur Startseite
+            </a>
+
+        </div>
+
+    </main>
+
 </body>
+
 </html>
